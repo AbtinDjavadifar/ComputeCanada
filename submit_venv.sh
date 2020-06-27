@@ -16,9 +16,7 @@ tar -xf ~/projects/def-najjaran/abtin/Data/DLR/Data.tar.gz
 cd Data/Virtual_Simulation/ && mkdir Masks
 cd ~/projects/def-najjaran/abtin/Codes/MaskCreator/
 
-python Annotation2MaskConverter.py
+python convert_annotations_to_masks.py
 
 cd $SLURM_TMPDIR
 tar -cf ~/projects/def-najjaran/abtin/Data/DLR/Results.tar.gz work/Data/Virtual_Simulation/Masks
-
-
